@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - SeaKalm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header id="header" class="header">
+            <!-- Gerado pelo auth.js -->
+        </header>
+
+        <main class="container">
+            <div class="profile-card">
+                <h1>Meu Perfil</h1>
+                <div class="profile-picture-container">
+                    <img id="profile-pic" src="https://via.placeholder.com/150" alt="Foto de Perfil">
+                </div>
+                <form id="profile-form">
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" id="username" required>
+                    <label for="new-password">Nova Senha (deixe em branco para não alterar)</label>
+                    <input type="password" id="new-password">
+                    <button type="submit" class="button-primary">Salvar Alterações</button>
+                    <div id="profile-message" class="auth-message"></div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Email para contato: <a href="mailto:contato@seakalm.com">contato@seakalm.com</a></p>
+            <p>Criado por JOTA</p>
+        </footer>
+    </div>
+    <script src="auth.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
