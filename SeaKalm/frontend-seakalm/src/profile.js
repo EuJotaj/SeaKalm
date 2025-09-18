@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadUserProfile() {
         usernameInput.value = loggedInUser.username;
         // Se houver uma foto de perfil salva, usa. Senão, usa uma padrão.
-        profilePicImg.src = loggedInUser.profilePictureUrl || 'https://via.placeholder.com/150';
+        profilePicImg.src = loggedInUser.profilePictureUrl || 'foto_perfil.png';
     }
 
     /**
