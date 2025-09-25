@@ -82,7 +82,8 @@ h1, h2, h3 {
 
 .user-profile { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text-dark); }
 .avatar { background-color: var(--primary-blue); color: white; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; }
-.nav-link { color: var(--text-light); text-decoration: none; font-weight: 600; cursor: pointer; }
+.nav-link { color: var(--text-light); text-decoration: none; font-weight:
+     600; cursor: pointer; }
 
 .footer {
     text-align: center;
@@ -101,7 +102,7 @@ h1, h2, h3 {
 
 .hero {
     min-height: 50vh; display: flex; justify-content: center; align-items: center; text-align: center;
-    background-image: url('hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('hero-bg.jpg') center/cover no-repeat;
     background-size: cover; background-position: center;
 }
 .hero-content { background-color: rgba(0, 0, 0, 0.2); padding: 48px; border-radius: 24px; backdrop-filter: blur(5px); }
@@ -111,6 +112,8 @@ h1, h2, h3 {
 .hero-actions { display: flex; justify-content: center; gap: 16px; }
 
 .button-primary { background-color: white; color: var(--primary-blue); border: 0.5px solid #d3d3d3; font-size: 16px; display: flex; align-items: center; justify-content: center; }
+.modal-content .button-primary {background: linear-gradient(90deg, #6ec5ff, #5fa8ff);color: white;font-weight: 600;padding: 12px;border-radius: 10px;transition: 0.2s ease;display: flex;align-items: center;justify-content: center;gap: 8px;}
+.modal-content .button-primary:hover {transform: translateY(-2px);box-shadow: 0 6px 12px rgba(0,0,0,0.15);}
 .button-secondary { background-color: transparent; color: white; border: 2px solid white; font-size: 16px; }
 .button-primary, .button-secondary { text-decoration: none; padding: 14px 28px; border-radius: 28px; font-weight: 700; display: flex; align-items: center; gap: 8px; transition: transform 0.2s; cursor: pointer; }
 .button-primary:hover, .button-secondary:hover { transform: scale(1.10); }
