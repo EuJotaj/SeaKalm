@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Estilos para o Aviso de Manutenção
+   ========================================================================== */
+
+.maintenance-notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+    margin: 16px; /* Adiciona uma margem para não colar nas bordas */
+    background-color: #f8f9fa; /* Um cinza bem claro */
+    border: 1px dashed #ced4da; /* Borda tracejada para indicar "em construção" */
+    border-radius: 16px;
+    color: var(--text-dark); /* Usa a variável de cor do seu site */
+    height: 100%; /* Ocupa a altura do container pai (útil para o chat) */
+}
+
+.maintenance-notice i {
+    font-size: 48px;
+    color: var(--primary-blue); /* Usa a cor primária do seu site */
+    margin-bottom: 16px;
+    /* Animação sutil de "trabalhando" */
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.maintenance-notice h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.maintenance-notice p {
+    font-size: 16px;
+    color: var(--text-light); /* Usa a cor de texto secundária */
+    line-height: 1.6;
+    max-width: 350px;
+    margin-bottom: 0;
+}
+
+/* Animação para o ícone */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}

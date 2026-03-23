@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendo História - SeaKalm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/story-page.css">
+    <link rel="stylesheet" href="css/profile-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header id="header" class="header">
+             <!-- Gerado pelo auth.js -->
+        </header>
+
+        <main class="story-page-container">
+
+            <!-- ====================================================== -->
+            <!-- NOVO BLOCO ADICIONADO AQUI PARA MOSTRAR OS METADADOS -->
+            <!-- ====================================================== -->
+            <div id="story-meta-container" class="container">
+                <div id="story-meta" class="story-meta-card">
+                    <div class="meta-item">
+                        <i class="fa-solid fa-tags"></i>
+                        <span id="story-category">Carregando...</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span id="story-duration">Carregando...</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-child"></i>
+                        <span id="story-age">Carregando...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- O container do texto da história -->
+            <div id="story-content" class="container story-text-body">
+                <h1>Carregando história...</h1>
+            </div>
+
+            <!-- O player de áudio permanece o mesmo -->
+            <div id="tts-player" class="tts-player-controls hidden">
+                <button id="play-button" title="Ouvir"><i class="fas fa-play"></i></button>
+                <button id="pause-button" class="hidden" title="Pausar"><i class="fas fa-pause"></i></button>
+                <button id="stop-button" class="hidden" title="Parar"><i class="fas fa-stop"></i></button>
+            </div>
+            
+        </main>
+        
+        <footer class="footer">
+            <p>Email para contato: <a href="mailto:contato@seakalm.com">contato@seakalm.com</a></p>
+            <p>Criado por JOTA</p>
+        </footer>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/story.js"></script>
+</body>
+</html>
